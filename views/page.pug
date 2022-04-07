@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+      title Socket.IO chat
+      script(src='/chat.js')
+      script(src='/socket.io/socket.io.js')
+  body
+      #input(style='margin-left: 5px; ')
+      #content(style='display: block; margin: auto; padding: 3rem; background-color: #F7F5F2; border: 2px solid #8479E1; border-radius: 10px; color: #4700D8; font-family: -apple-system, BlinkMacSystemFont, "Merriweather", serif; font-size: 20px; text-align: left; letter-spacing: 1.4px; ')
+      .controls(style='padding: 10px; width: 350px;')
+          | Name:
+          input#name(style='width:350px;')
+          br
+          | Message :
+          input#field(style='width:350px;')
+          input#send(type='button', value='send' style='width: 100px; float: right; height: 50px; color: #F7F5F2; background-color: #8479E1; border: 2px solid #F7F5F2; border-radius: 10px;')
